@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Petite Bakery Studio | Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bg.jpg");
+  min-height: 75%;
+  opacity: 0.8;
+}
+.name{
+font-weight:bold;
+
+}
+.par{
+text-align:justify;
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  width:353px;
+  
+ 
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  color: black;
+  background-color: black;
+  font-family: inherit;
+
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 353px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  background:black;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #CCCCCC;
+  color: #000000;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+div.gallery {
+  margin:25px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.fl:link{
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="topnav" id="myTopnav">
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+   <a href="Petite Bakery Studio_main page.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Petite Bakery Studio_page 2.html" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+	<div class="dropdown">
+    
+      <a href="Petite Bakery Studio_page 3.html" class="w3-button w3-block w3-black">
+	  MENU<i class="fa fa-caret-down"></i></a>
+	  
+	  <div class="dropdown-content">
+      <a href="Petite Bakery Studio_page 3_1.html">ORDER NOW</a>
+	</div>
+	</div>
+    <div class="w3-col s3">
+      <a href="Petite Bakery Studio_page 4.html" class="w3-button w3-block w3-black">FIND US</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from Monday to Sunday</span>
+  </div>
+  <div class="name w3-display-middle w3-center">
+    <span class="w3-text-black" style="font-size:90px">the<br>Bakery</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Molito Lifestyle Center</span>
+  </div>
+</header>
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand  w3-large">
+
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64" id="see"><span class="w3-tag w3-wide">SEE OUR GALLERY</span></h5>
+    
+	<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3215246198747346/?type=3">
+    <img src="G1.jpg" alt="Cereal milk" width="600" height="400">
+  </a>
+  <div class="desc">— at Molito Lifestyle Center.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3214445642160735/?type=3">
+    <img src="G2.jpg" alt="pride cookie" width="600" height="400">
+  </a>
+  <div class="desc">Celebrating YOU everyday 🏳️‍🌈</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3211233499148616/?type=3">
+    <img src="G3.jpg" alt="cookie w/ milk" width="600" height="400">
+  </a>
+  <div class="desc">Me & my Bestie when we say we got each other's back 🍪☕️</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3208126436125989/?type=3">
+    <img src="G4.jpg" alt="double cookie" width="600" height="400">
+  </a>
+  <div class="desc">Double Cookie Break = the only drama we need ✌🏻🤧🍪</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3202735446665088/?type=3">
+    <img src="G5.jpg" alt="handling cookie" width="600" height="400">
+  </a>
+  <div class="desc">How hands should be raised 🙋🏻‍♀️🙋🏻🍪</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/petitecakestudio/photos/pb.100063872201049.-2207520000./3196616647276968/?type=3">
+    <img src="G6.jpg" alt="cookie stack" width="600" height="400">
+  </a>
+  <div class="desc">Cookie stack & a sunny day ☀️</div>
+</div>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<br>
+<h5 class="w3-center w3-padding-64" id="ex"><span class="w3-tag w3-wide">EXPLORE MORE</span></h5>
+<div class="w3-content w3-display-container" style="max-width:500px">
+  <img class="mySlides" src="G7.jpg" style="width:100%">
+  <img class="mySlides" src="G8.jpg" style="width:100%">
+  <img class="mySlides" src="G9.jpg" style="width:100%">
+  <img class="mySlides" src="G10.jpg" style="width:100%">
+  <img class="mySlides" src="G11.jpg" style="width:100%">
+  <img class="mySlides" src="G12.jpg" style="width:100%">
+  <img class="mySlides" src="G13.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+  </div>
+</div>
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+  </div>
+</div>
+<br>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+
+<p><b>Home</b></p>
+<p ><a href="Petite Bakery Studio_main page.html"class="fl"> About the Bakery</a></p>
+
+
+
+<p><b>Gallery</b></p>
+<p><a href="#see"class="fl"> See our Gallery</a></p>
+<p ><a href="#ex"class="fl"> Explore More</a></p>
+
+
+<p><b>Menu</b></p>
+<p ><a href="Petite Bakery Studio_page 3.html"class="fl"> Explore our Menu</a></p>
+
+
+<p><b>Order Now</b></p>
+<p ><a href="Petite Bakery Studio_page 3_1.html" class="fl"> Click on the Cookies to Order</a></p>
+
+
+<p><b>Find Us</b></p>
+<p ><a href="Petite Bakery Studio_page 4.html" class="fl"> Visit our Location</a></p>
+<p ><a href="Petite Bakery Studio_page 4.html" class="fl"> Message Us</a></p>
+
+<br>
+<br>
+<a href="Petite Bakery Studio_main page.html"><img src="logo.jpg" alt="logo" width="50" height="50"></a>
+<p> Petite Bakery Studio</p>
+ <p>© 2023</p>
+  <p>Developed by Alyanna Taw</p>
+</footer>
+</body>
+</html>
